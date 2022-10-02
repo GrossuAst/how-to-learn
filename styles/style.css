@@ -31,7 +31,7 @@
 }
 
 .header{
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   /* margin-top: 30px;
   margin-left: 64px; */
   display: flex;
@@ -39,7 +39,9 @@
   /* justify-content: space-between; */
   justify-content: center;
   padding-left: 64px;
+  padding-top: 30px;
   position: relative;
+  border: 1px solid red;
 }
 
 .logo{
@@ -69,11 +71,16 @@
   position: absolute;
   bottom: 30px;
   width: 388px;
+  margin:0;
   font-size: 18px;
   line-height: 25px;
   font-style: normal;
 
   /* border: 1px solid red; */
+}
+
+.header__link{
+  text-decoration: none;
 }
 
 
@@ -83,7 +90,7 @@
   position: absolute;
   bottom: 0px;
   right: 0px;
-  /* z-index: -1; */
+  z-index: -1;
   /* border: 1px solid red; */
 }
 
@@ -94,6 +101,58 @@
   position: absolute;
   right: 0px;
   top: 64px;
-  /* z-index: -2; */
+  z-index: -2;
   /* border: 1px solid red; */
+}
+
+        /* блок description            */
+
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+
+  border: 1px solid red;
+}
+
+.two-columns{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border: 1pxsolid red;
+}
+
+.two-columns__brief{
+  margin: 0;
+  width: 175px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2f80ed;
+  border: 1px solid red;
+}
+
+.two-columns__main-text{
+  width: 80%;
+  min-width: 784px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  border: 1px solid red;
+}
+
+.two-columns__paragraph{
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.two-columns p:last-of-type{
+  margin-bottom: 0;
+}
+
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
 }
