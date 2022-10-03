@@ -20,6 +20,7 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -43,9 +44,9 @@
   padding-left: 64px;
   padding-top: 30px;
   position: relative;
+  overflow: hidden;
   border: 1px solid red;
   background-color: #f2f2f2;
-  /* z-index: -4; */
 }
 
 .logo{
@@ -109,7 +110,7 @@
   right: 0px;
   top: 64px;
   z-index: 1;
-  /* border: 1px solid red; */
+    /* border: 1px solid red; */
 }
 
         /* стили блока description            */
@@ -127,7 +128,7 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  border: 1pxsolid red;
+  /* border: 1px solid red; */
 }
 
 .two-columns__brief{
@@ -137,7 +138,7 @@
   font-weight: normal;
   line-height: 1.2;
   color: #2f80ed;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .two-columns__main-text{
@@ -146,7 +147,7 @@
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .two-columns__paragraph{
@@ -172,8 +173,17 @@
   border: 1px solid red;
 }
 
-.digits h4, p {
+.digits h4{
   margin: 0;
+}
+
+.digits h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.digits p{
+  margin-top: 20px;
 }
 
 /*        Переиспользовать в других секциях     */
@@ -216,17 +226,11 @@
   border: 1px solid red;
 }
 
-.table__cell_place_digits{
+.digits .table__cell:nth-child(n+5) {
   margin-top: 60px;
 }
 
-.table_place_digits{
-  margin-top: 60px;
-}
 
-.section-subtitle_place_digits{
-  margin-top: 20px;
-}
 
 .table__heading {
   font-weight: 600;
@@ -238,8 +242,4 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 1.2;
-}
-
-.table__text_place_digits {
-  margin-top: 20px;
 }
