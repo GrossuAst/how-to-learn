@@ -173,7 +173,7 @@
   border: 1px solid red;
 }
 
-.digits h4{
+/* .digits h4{
   margin: 0;
 }
 
@@ -184,7 +184,7 @@
 
 .digits p{
   margin-top: 20px;
-}
+} */
 
 /*        Переиспользовать в других секциях     */
 
@@ -206,9 +206,15 @@
   font-weight: normal;
 }
 
-/* -------- */
+.section-title_place_digits{
+  margin: 0 0 20px 0;
+}
 
-.table{
+.section-subtitle_place_digits {
+  margin: 0 0 20px 0;
+}
+
+.table {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -217,29 +223,95 @@
   list-style-type: none;
   padding: 0;
   margin: 0 auto 0 auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .table__cell{
+  margin: 0;
   text-align: start;
   width: 250px;
   border: 1px solid red;
 }
 
-.digits .table__cell:nth-child(n+5) {
+.table__cell_place_digits {
   margin-top: 60px;
 }
 
-
+/* .digits .table__cell:nth-child(n+5) {
+  margin-top: 60px;
+} */
 
 .table__heading {
+  margin: 0;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.15;
 }
 
 .table__text{
+  margin: 20px 0 0 0;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.2;
 }
+
+
+/*                 блок фейнман          */
+
+.feynman h2, h3{
+  margin: 0;
+}
+
+.feynman {
+  position: relative;
+  text-align: center;
+  /* padding-top: 100px; */
+  border: 1px solid red;
+  background: #f2f2f2;
+  height: 890px;
+  z-index: -2;
+}
+
+.feynman__title {
+  padding-top: 100px;
+  /* position: relative; */
+  display: inline-block;
+  width: 648px;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 1.15;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  /* position: relative; */
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.feynman-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 637px;
+  width: 867px;
+  z-index: -1;
+}
+
+
+/* блок kaufman */
