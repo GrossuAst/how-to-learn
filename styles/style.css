@@ -173,19 +173,6 @@
   border: 1px solid red;
 }
 
-/* .digits h4{
-  margin: 0;
-}
-
-.digits h3{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.digits p{
-  margin-top: 20px;
-} */
-
 /*        Переиспользовать в других секциях     */
 
 .section-title{
@@ -258,22 +245,19 @@
 
 /*                 блок фейнман          */
 
-.feynman h2, h3{
-  margin: 0;
-}
 
 .feynman {
   position: relative;
   text-align: center;
   /* padding-top: 100px; */
   border: 1px solid red;
-  background: #f2f2f2;
+  background: #f2f2f2 url(/images/feynman.png) no-repeat left bottom;
   height: 890px;
-  z-index: -2;
+  /* z-index: -1; */
 }
 
 .feynman__title {
-  padding-top: 100px;
+  margin: 100px 0 0 0;
   /* position: relative; */
   display: inline-block;
   width: 648px;
@@ -285,7 +269,7 @@
 
 .feynman__subtitle {
   /* position: relative; */
-  margin-top: 70px;
+  margin: 70px 0 0 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -301,17 +285,18 @@
   line-height: 51px;
   color: #2f80ed;
   text-decoration: none;
+  z-index: 1;
 }
 
-.feynman-image {
+/* .feynman-image {
   position: absolute;
   bottom: 0;
   left: 0;
   display: block;
   height: 637px;
   width: 867px;
-  z-index: -1;
-}
+  border: 1px solid red;
+} */
 
 
 /* блок kaufman */
