@@ -251,7 +251,44 @@
 }
 
 
+/*                 блок фейнман          */
 
+.feynman {
+  position: relative;
+  text-align: center;
+  background: #f2f2f2 url(.././images/feynman.png) no-repeat left bottom;
+  min-height: 890px;
+}
+
+.feynman__title {
+  margin: 100px 0 0 0;
+  display: inline-block;
+  width: 648px;
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 1.15;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  margin: 70px 0 0 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #2f80ed;
+  text-decoration: none;
+  z-index: 1;
+}
 
 
 /* стили блока digits */
@@ -261,8 +298,6 @@
   padding: 100px 0 100px 0;
   /* border: 1px solid red; */
 }
-
-/*        Переиспользовать в других секциях     */
 
 .section-title {
   display: inline-block;
@@ -320,44 +355,74 @@
   line-height: 1.2;
 }
 
-/*                 блок фейнман          */
 
-.feynman {
-  position: relative;
-  text-align: center;
-  background: #f2f2f2 url(.././images/feynman.png) no-repeat left bottom;
-  min-height: 890px;
-  /* border: 1px solid red; */
+/*                 блок khan */
+
+.khan {
+  background-color: #f2f2f2;
+  padding-top: 105px;
+  box-sizing: border-box;
 }
 
-.feynman__title {
-  margin: 100px 0 0 0;
-  display: inline-block;
-  width: 648px;
-  font-weight: 600;
-  font-size: 120px;
+.khan__container {
+  width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+.khan__author {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 42px;
+  margin: 0;
+}
+
+.khan__title {
   line-height: 1.15;
-  z-index: 1;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0 0 50px 0;
 }
 
-.feynman__subtitle {
-  margin: 70px 0 0 0;
-  line-height: 51px;
-  font-size: 36px;
+.khan__quote {
+  max-width: 790px;
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
   font-weight: normal;
-  z-index: 1;
 }
 
-.feynman__link {
-  position: absolute;
-  top: 50%;
-  right: 48px;
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 51px;
+  margin: 36px 0 10px 0;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 68px 0;
+}
+
+.khan__book-container {
+  display: flex;
+
+}
+
+.khan__book-pic {
+  width: 608px;
+  height: 620px;
+  margin: 0 48px 0 0;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-size: normal;
   color: #2f80ed;
+  display: inline-block;
   text-decoration: none;
-  z-index: 1;
 }
 
 
