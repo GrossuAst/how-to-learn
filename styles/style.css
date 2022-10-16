@@ -497,6 +497,25 @@
   position: absolute;
 }
 
+/*                 блок resources           */
+
+.resources {
+  text-align: center;
+  padding: 100px 0 217px 0;
+  box-sizing: border-box;
+}
+
+.resources__logo-zone {
+  max-width: 1100px;
+  margin: 80px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.resources__link {
+  height: 38px;
+  width: 270px;
+}
+
 /*                 блок footer             */
 
 .footer {
