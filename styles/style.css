@@ -24,6 +24,17 @@
   }
 }
 
+@keyframes opacity {
+  from {opacity: 1;
+  }
+  to {opacity: 0.7;
+  }
+}
+
+.opacity:hover {
+  animation: opacity 0.3s linear forwards;
+}
+
 .rotation {
   animation: rotation 20s linear infinite;
 }
@@ -87,6 +98,10 @@
   color: #2f80ed;
   z-index: 3;
 }
+
+/* .header__link:hover {
+  animation: opacity;
+} */
 
 
 .header__main-illustration {
@@ -177,23 +192,21 @@
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  gap: 60px 100px;
   width: 920px;
-
 }
 
 .cards__item {
   width: 240px;
-  margin-right: 100px;
 }
 
-.cards__item:nth-child(3) {
+/* .cards__item:nth-child(3) {
   margin-right: 0;
 }
 
 .cards__item:nth-child(n+4) {
   margin-top: 60px;
-}
+} */
 /*
 .cards__item:nth-child(5) {
   margin-top: 60px;
@@ -205,6 +218,7 @@
   margin-bottom: 0;
   width: 160px;
   height: 160px;
+  border-radius: 50%;
 }
 
 .cards__title {
@@ -235,11 +249,18 @@
   margin-top: 50px;
   position: relative;
   top: 50px;
-  margin: 0 auto 0 auto;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .video__iframe {
-  margin-right: 20px;
+  width: 515px;
+  height: 316px;
+  border: 0;
+  /* margin-right: 20px; */
 }
 
 /*        стили блока oakley       */
@@ -407,13 +428,15 @@
 
 .khan__book-container {
   display: flex;
-
+  gap: 48px;
 }
 
 .khan__book-pic {
   width: 608px;
   height: 620px;
-  margin: 0 48px 0 0;
+  margin: 0;
+  object-fit: cover;
+  object-position: top;
 }
 
 .khan__buy-link {
@@ -423,6 +446,7 @@
   color: #2f80ed;
   display: inline-block;
   text-decoration: none;
+  align-self: flex-start;
 }
 
 
@@ -509,11 +533,13 @@
   max-width: 1100px;
   margin: 80px auto 0 auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .resources__link {
+  margin: 0;
   height: 38px;
   width: 270px;
+  object-fit: cover;
 }
 
 /*                 блок footer             */
