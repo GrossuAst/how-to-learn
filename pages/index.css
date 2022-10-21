@@ -9,7 +9,7 @@
 @import url(../blocks/rotation/rotation.css);
 
 /* прозрачность ссылок */
-@import url(../blocks/opacity/opacity.css);
+@import url(../blocks/link-opacity/link-opacity.css);
 
 /* стили заголовка */
 @import url(../blocks/section-title/section-title.css);
